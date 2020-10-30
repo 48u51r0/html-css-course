@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'/>
+  <title>Dummy</title>
+  <!-- We can recycle a single styles.css file at every html so the site appearance
+  is consistent  -->
+  <base href="\Users\Usuario\Documents\html-css-course\" target="_blank">
+  <link rel='stylesheet' href='03-hello-css\styles.css'/>
+  <!-- We can set a page specific style overriding the external style (styles.css) -->
+  <!-- But page specific styles are complex to maintain. We'd better use externals -->
+  <style media="screen">
+  body{
+    color: #0000FF;    /* Blue */
+  }
+  </style>
+</head>
+<body>
+  <h1>Dummy</h1>
+  <p>For blue lines we have used page specific style</p>
+  <p>This is a dummy page that helps us demonstrate reusable CSS
+    stylesheets. <a href='03-hello-css\hello-css.html'>Go back</a>.</p>
+    <p>For the broken link we have use an inline style</p>
+
+    <p>Want to try crossing out an <a href='nowhere.html'
+      style='color: #990000; text-decoration: line-through;'>obsolete link</a>?
+      This is your chance!</p>
+    </body>
+    </html>

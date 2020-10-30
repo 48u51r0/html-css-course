@@ -1,0 +1,56 @@
+/*This is a CSS rule: selector + declaration block*/
+/*A selector indicates which HTML element the rule applies to: body*/
+body {
+  /*Declarations block comes within curly brackets{}*/
+  /*color: #FF0000;   red is horrible, let's change it*/
+  color: #414141;    /* Dark gray */
+  /*properties are set separated by ;*/
+  background-color:  #FF0000:/*#EEEEEE;    /* Light gray */
+  font-size: 18px;
+}
+
+/* Body rules define properties for the whole document.
+but can be changed for specific elements via new rules */
+
+h1{
+  font-size: 2em; /*em units are relative to the base defined in body */
+  color: #FF0000;
+}
+h2{
+  font-size: 1.6em;
+}
+
+/* selecting multiple elements */
+h3, h4, h5, h6{
+  /* Not all users have the same fonts installed
+  So we supply several and the most preferred font is the leftmost one */
+  font_font-family: "Helvetica", "Arial", sans-serif;
+  font-weight: normal; /*in case we didn't want bold headings*/
+}
+
+/* When we want to alter the bullet icons
+we do it at the parent element <ul> or <ol> */
+ul{
+  list-style-type: circle
+}
+ol{
+  list-style-type: lower-roman;
+}
+/* rermove the underline set as default for all the links */
+a {
+  text-decoration: none;
+}
+/* text alignment */
+p{
+  text-align: justify; /*  It could be right or left */
+}
+
+we could change the behaviour of <em> and <strong> tags
+em{
+  font-weight: normal;
+  font-style: italic; /*this is the normal behaviour*/
+}
+strron{
+  font-weight: bold;
+  font-style: normal; /*this is the normal behaviour*/
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'/>
+  <title>Hello, CSS</title>
+  <!-- First we set a base directory. This is not a root relative way but a cheat
+  If we used '\' the root in a file system is always the root drive (e.g. C://)
+  So we change the base directory from the dir the file is in to the base dir -->
+  <base href="\Users\Usuario\Documents\html-css-course\" target="_blank">
+  <!-- link element load the css styles onto the html file  -->
+  <!-- link elements are meant to be used inside head elements only -->
+  <!-- They are self closing elements, just like br, hr, etc -->
+  <!-- rel attribute defines the relationship between the resource and the HTML document -->
+  <link rel='stylesheet' href='03-hello-css\styles.css'/>
+</head>
+<body>
+  <h1>Hello, CSS</h1>
+
+  <p>CSS lets us style HTML elements. There’s also
+    <a href='03-hello-css\dummy.html'>another page</a> associated with this example.</p>
+    <h2>List Styles</h2>
+
+    <p>You can style unordered lists with the following bullets:</p>
+    C:\Users\Usuario\Documents\html-css-course
+    <ul>
+      <li>disc</li>
+      <li>circle</li>
+      <li>square</li>
+    </ul>
+
+    <p>And you can number ordered lists with the following:</p>
+
+    <ol>
+      <li>decimal</li>
+      <li>lower-roman</li>
+      <li>upper-roman</li>
+      <li>lower-alpha</li>
+      <li>upper-alpha</li>
+      <li>(and many more!)</li>
+    </ol>
+    <!-- A very interesting list type is "none" -->
+    <!-- We can create our own bullet designs by means of the property "list-sytle-image" -->
+
+  </body>
+  </html>
