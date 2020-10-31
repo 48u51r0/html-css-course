@@ -1,0 +1,42 @@
+
+html {
+  font-size: 100%; /*It implies the document will use the browser fontsize as a
+  base (tipically 16px)*/
+}
+/* First we create a rule for block level boxes: */
+h1, p {
+  background-color: #DDE0E3;    /* Light gray */
+}
+h1 {
+  padding: 50px; /*It adds 50 pixels to each side of the <h1> elements*/
+  /*border: 1px solid #5D6063; /*size style color*/
+  border-bottom: 1px solid #5D6063;
+}
+/* We can differently configure each side of the padding */
+p {
+  /*em units are usually used for padding and margin*/
+  padding-top: 2.197em; /*2.197em = 2.197 x 16px =35px*/
+  padding-bottom: 0.59em;  /*20px*/
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* We don't need to set the 4 padding properties. We can do as bellow instead: */
+p {
+  padding: 20px 10px; /*vertical padding and horizontal padding*/
+  /* Margins are always transparent */
+  margin-bottom: 50px; /*We can add space around the padding and the other boxes*/
+}
+/* or */
+p {
+  /* Paddings are part of the clickable area of an element */
+  padding: 20px 0 20px 10px; /*top right bottom left*/
+}
+/* Now a rule for inline boxes */
+em, strong {
+  background-color: #B2D6FF;    /* Light blue */
+  /* we can make inline elements behave like blocks */
+  /* This comes in handy when trying to turn <a> elements into buttons
+  or formatting <img/> elements, which are inline boxes by default  */
+  /* display: block; */
+  display: inline; /*This is not necessary since it's the default*/
+}

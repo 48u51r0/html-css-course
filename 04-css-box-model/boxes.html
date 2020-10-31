@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'/>
+  <title>Boxes Are Easy!</title>
+  <link rel='stylesheet' href='box-styles.css'/>
+</head>
+<body>
+  <p>you can follow the chapter <a href="https://www.internetingishard.com/html-and-css/css-box-model/" target="_blank"><strong>in here.</strong> </a> </p>
+  <h1>Headings Are Block Elements</h1>
+
+  <p>Paragraphs are blocks, too. <em>However</em>, &lt;em&gt; and &lt;strong&gt;
+    elements are not. They are <strong>inline</strong> elements.</p>
+
+    <p>Block elements define the flow of the HTML document, while inline elements
+      do not.</p>
+      <h1>Summary</h1>
+      <p>Every HTML element is a box. Boxes come in two flavours:</p>
+      <ul>
+        <li>Block Boxes</li>
+        <li>Inline Boxes</li>
+      </ul>
+      <p>Boxes are defined by 4 properties:</p>
+      <ul>
+        <li><strong>Content: </strong>It's our text or media that we place
+          in the element. It's the only piece with semantic value, That's why
+          it is in the html.</li>
+        <li><strong>Padding: </strong>Space between the box content and its border</li>
+        <li><strong>Border: </strong>Line between the box's padding and margin</li>
+        <li><strong>Margin: </strong>Space between the box and the surrounding boxes</li>
+        </ul>
+        <h2>Vertical Margins collapse</h2>
+        <p>Two boxes one of top of the other have their vertical margins collapsed. That is to
+        say, the distance between both will be the biggest vertical margin. They are not addtive.</p>
+        <p>When we want to bypass this working by de fault, we'll need to add an element between them.</p>
+        <p>&lt;div&gt; is the solution. For instance. Check the next two Paragraphs bellow:</p>
+        <p>This is Paragraph #1</p>
+        <div style='padding-top: 1px'></div>
+        <p>This is Paragraph #2. We can see separation distance is bigger here than in between previous Paragraphs.
+        That's because vertical margins have not collapsed</p>
+
+      </body>
+      </html>
