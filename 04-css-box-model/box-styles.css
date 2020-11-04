@@ -40,3 +40,21 @@ em, strong {
   /* display: block; */
   display: inline; /*This is not necessary since it's the default*/
 }
+div {
+  color: #FFF;
+  background-color: #5995DA;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5D6063;
+  border-radius: 5px;
+}
+.button {
+  /* [Existing Declarations] */
+  width: 200px; /*This is the content width, the box width is bigger*/
+  box-sizing: border-box;
+  <!-- overflow: scroll; -->
+}
+body {
+  text-align: center;
+}
