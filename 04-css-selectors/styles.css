@@ -1,0 +1,24 @@
+/* the dot before the selector name distinguishes the class selectors from
+type selector that we've seen previously */
+.synopsis {
+  color: #7E8184;
+  font-style: italic;
+}
+
+/* We can name classes the way we want, for instance prueba */
+.prueba {
+  color: #7EA1E4
+}
+
+.button {
+  color: #FFF;
+  background-color: #5995DA;    /* Blue */
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 3px solid #5D6063;    /* Dark gray */
+  border-radius: 5px;
+
+  width: 200px;
+  margin: 20px auto;
+}
