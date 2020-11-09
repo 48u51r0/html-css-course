@@ -1,4 +1,10 @@
-
+/* * is the universal selector. it's useful for overriding every browser's own
+default settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html {
   font-size: 100%; /*It implies the document will use the browser fontsize as a
   base (tipically 16px)*/
@@ -40,10 +46,7 @@ em, strong {
   /* display: block; */
   display: inline; /*This is not necessary since it's the default*/
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> f7f1a873fa2884dc9efc8b122aeafb5d69451d8d
 div {
   color: #FFF;
   background-color: #5995DA;
@@ -53,15 +56,14 @@ div {
   border: 2px solid #5D6063;
   border-radius: 5px;
 }
-<<<<<<< HEAD
 .button {
   /* [Existing Declarations] */
   width: 200px; /*This is the content width, the box width is bigger*/
   box-sizing: border-box;
-  <!-- overflow: scroll; -->
+ /* overflow: scroll; */
+   margin: 20px auto; /* horizontal aligning block-level elements. It only works
+    on elements with specific width */
 }
 body {
   text-align: center;
 }
-=======
->>>>>>> f7f1a873fa2884dc9efc8b122aeafb5d69451d8d
