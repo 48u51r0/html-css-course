@@ -8,6 +8,27 @@ type selector that we've seen previously */
   color: #7E8184;
   font-style: italic;
 }
+/* we can replace synopsis class with a :first-of-type pseudoclass.
+The result is equivalent */
+p:first-of-type {
+  color: #7E8184;
+  font-style: italic;
+}
+/* Structural pseudoclasses affect to every element containing them. For instance,
+p:first-of-type affect to every first paragraph, so when you have several elements
+containing p elements <div> the first paragraphs will be styled. */
+/* By using child selectors, we can avoid this behaviour */
+.page > p:first-of-type {
+  color: #7E8184;
+  font-style: italic;
+}
+
+/* Descendant selector. It overrides the .synopsis rule */
+.synopsis em {
+  font-style: normal;
+}
+
+
 
 /* We can name classes the way we want, for instance prueba */
 .prueba {
@@ -26,3 +47,88 @@ type selector that we've seen previously */
   width: 200px;
   margin: 20px auto;
 }
+/* This rule overrides the .button when applied to the same element.
+If we changed the order of rules the overriding would change. Last class
+modifies always the previous ones */
+.call-to-action {
+  font-style: italic;
+  background-color: #EEB75A;    /* Yellow */
+}
+/* Pseudo classes for links */
+a:link {
+  color: blue;
+  text-decoration: none;
+}
+a:visited {
+  color: purple;
+}
+a:hover {
+  color: aqua;
+  text-decoration: underline;
+}
+a:active {
+  color: red;
+}
+a:visited:hover {
+  color: orange;
+}
+/* The previous rule breaks the a:active rule. To fix it: */
+a:visited:active {
+  color: red;
+}
+/* We should change previous button rules, But for learning purposes
+we'll just override them */
+
+/* Pseudo classes for other elements*/
+.button:link,                 /* Change this */
+.button:visited {             /* we can break line or not */
+  display: block;             /* convert inline element into block */
+  text-decoration: none;      /* Override default underlining behaviour */
+
+  color: #FFF;                /* The rest is the same */
+  background-color: #5995DA;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5D6063;
+  border-radius: 5px;
+
+  width: 200px;
+  margin: 20px auto;
+}
+.button:hover,
+.button:visited:hover {
+  color: #FFF;
+  background-color: #76AEED;  /* Light blue */
+}
+.button:active,
+.button:visited:active {
+  color: #FFF;
+  background-color: #5995DA;  /* Blue */
+}
+
+.call-to-action:link,
+.call-to-action:visited {
+  font-style: italic;
+  background-color: #EEB75A;     /* Yellow */
+}
+
+.call-to-action:hover,
+.call-to-action:visited:hover {
+  background-color: #F5CF8E;     /* Light yellow */
+}
+
+.call-to-action:active,
+.call-to-action:visited:active {
+  background-color: #EEB75A;     /* Yellow */
+}
+
+/* Structural pseudo classes */
+p:last-of-type {
+  margin-bottom: 50px;
+}
+
+/* Id-selectors can't be reused.  */
+#button-2 {
+  color: #5D6063;  /* Dark gray */
+} 

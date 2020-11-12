@@ -4,6 +4,7 @@
   <meta charset='UTF-8'/>
   <title>CSS Selectors</title>
   <link rel='stylesheet' href='styles.css'/>
+  <base href="C:\Users\Usuario\Documents\html-css-course\" target="_blank">
 </head>
 <body>
   <div class="page">
@@ -28,7 +29,19 @@
           <div class='button'>Button One</div>
           <!-- WE can reuse the same CSS style for 2 different elements -->
           <div class='button'>Button Two</div>
-
+          <!-- MOdifying a style by adding a second class -->
+          <div class='button call-to-action'>Button Three</div>
+          <!-- These result in the same rendered page -->
+          <div class='button call-to-action'>Button Four</div>
+          <div class='call-to-action button'>Button Five</div>
+          <p>Once we've checked the uses of additional classes, we're gonna
+          try real buttons that actually take you somewhere</p>
+          <a class='button' href='01-basic-web-pages\basics.html'>(real)Button One</a>
+          <a class='button call-to-action' href='01-basic-web-pages\basics.html'>(real)Button Two</a>
+          <p>&lt;a&gt; elements are inline boxes (not blocks) by default. Besides
+          they have a color value by default too.</p>
+          <!-- This is an id selector -->
+          <a id='button-2' class='button' href='nowhere.html'>(real)Button Three</a>
   </div>
       </body>
       </html>
